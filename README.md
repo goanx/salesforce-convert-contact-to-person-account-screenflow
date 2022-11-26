@@ -138,6 +138,15 @@ After all of that, in my org I added the [Update Screen flow action from Unoffic
 
 Alternatively you can add a screen element that says it's done, and thank the user for their commitment to the upkeep of data quality. And tell them to refresh the page. 
 
+### 7. The last bit - create an action 
+
+In **Setup** -> **Object Manager** -> **Contact**, click on **Buttons, Links and Actions** and **New Action**. 
+- Action Type: Flow
+- Flow: whatever you named your flow 
+- Label: Convert to Person Account _(or whatever makes you feel good)_
+
+Add this action to each contact page layout that you need it on, or if you have dynamic actions enabled, add it to the lightning record pages. 
+
 ## Finally finally
 
 If the Account that was linked to the original contact record had only that one contact associated with it, you will have an 'orphaned' account. Different businesses will have different ways of dealing with this, so you can build that logic into the flow (which is why this is a screen flow). For reasons I didn't have that issue in my org so I didn't need to account for this :D 
