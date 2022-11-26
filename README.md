@@ -27,28 +27,33 @@ See: [https://help.salesforce.com/s/articleView?id=sf.account_person.htm&type=5]
 Go to **Setup**, **Flows** and click on the **New Flow** button. Select **Screen Flow** and **Create**. _If you need screenshots for this bit, go back to [Trailhead](https://trailhead.salesforce.com/) and get across the basics first_
 
 This is optional, but first thing I did was **add a Screen element** to display a warning before anything is processed. You can add whatever text you want here, or copy mine. 
+
 ![1 Convert Person Account](https://user-images.githubusercontent.com/119096189/204076901-3a6afdeb-44ed-4589-8519-6c263a7e1d98.png)
 
 The next element I added was a **Get Records** to get the field values of the current **Contact**. This is not optional. 
+
 ![2 Convert Person Account](https://user-images.githubusercontent.com/119096189/204077025-9ec7444f-a03e-4e47-9f85-6ff560ca023b.png)
 
 Since this flow will be triggered by an action on the contact record, the ID is defined as the variable **recordId**: 
+- Resource type: Variable 
 - API Name: recordId
 - Data Type: Text
 - Available for input: checked
 
-If you looked at [this comment on Reddit by Callister](https://www.reddit.com/r/salesforce/comments/dbhxnp/comment/f21t7oc/?utm_source=share&utm_medium=web2x&context=3) that I referred to under the Acknowledgements, you will see that: 
+If you looked at [this comment on Reddit by Callister](https://www.reddit.com/r/salesforce/comments/dbhxnp/comment/f21t7oc/?utm_source=share&utm_medium=web2x&context=3) that I referred to earlier under the Acknowledgements, you will see that: 
 
-> 4. The Reports To field on the Contact must be blank. The Contact is not set as a Reports To for any other contacts
+> **4. The Reports To field on the Contact must be blank. The Contact is not set as a Reports To for any other contacts**
+
 
 Therefore we need to add a **decision** element to check whether the **Reports To** field is blank. If it is not blank, the user cannot convert the contact and will get an error that tells them why. 
 ![3 Convert Person Account](https://user-images.githubusercontent.com/119096189/204077522-60616649-e83d-4247-8aa2-6ba0d0e6a303.png)
 
-> Note that I we didn't check whether the Contact is a Reports To for other contacts. I told you I am lazy.
+> **Note that I we didn't check whether the Contact is a Reports To for other contacts. I told you I am lazy.**
+
 
 Add a **screen** element under the Cannot Convert decision branch which displays some text to explain to the user that they need to remove whoever is in Reports To. That branch can **end** there. 
 ![4 Convert Person Account](https://user-images.githubusercontent.com/119096189/204077776-784fd9d8-deee-4b3f-bcf1-41af03d4cbb9.png)
 
 The **Default Outcome** is our happy path and now begins a series of DML elements to convert this bad boy. 
 
-
+To make sure I have a 1:1 relationship between the Contact and its 
