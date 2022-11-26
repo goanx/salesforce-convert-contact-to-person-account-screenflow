@@ -9,12 +9,13 @@ I mentioned some online resources which helped me understand the person account 
 
 If you would like to test your skills, open these up in some new tabs, stop reading my instructions and give it a try. 
 
-[Salesforce Tech Talk: How To Convert a Contact to a Person Record on 501Partners](https://501partners.com/salesforce-tech-talk-how-to-convert-a-contact-to-a-person-record/)
-[This comment on Reddit by Callister](https://www.reddit.com/r/salesforce/comments/dbhxnp/comment/f21t7oc/?utm_source=share&utm_medium=web2x&context=3)
+- [Salesforce Tech Talk: How To Convert a Contact to a Person Record on 501Partners](https://501partners.com/salesforce-tech-talk-how-to-convert-a-contact-to-a-person-record/)
+
+- [This comment on Reddit by Callister](https://www.reddit.com/r/salesforce/comments/dbhxnp/comment/f21t7oc/?utm_source=share&utm_medium=web2x&context=3)
 
 ### Why a screen flow? 
 
-The org I was working on has more than one person account record type, so I wanted to enable the user able to pick which one to use. That and it adds some flexibility for some extra user input and logic if that needs to be built into it down the track. Hopefully future me appreciates it. 
+The org I was working on has more than one person account record type, so I wanted to enable the user to pick which one to use (although I didn't add that selection in these instructions). That and a screen flow adds some flexibility for warnings, instructions and some extra user input and logic if that needs to be built into it down the track. Hopefully future me appreciates it. 
 
 ### Before you start
 
