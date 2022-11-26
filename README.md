@@ -1,5 +1,5 @@
 # private-test
-This is my first attempt at writing something. I recently had the misfortune of needing to convert a few contacts into person accounts. I did find some very good resources online on how to do this through doing some data imports/updates, however this is a very cumbersome process for only a few records and I am lazy and want the business users to start taking care of this. 
+This is my first attempt at writing something. I recently had the misfortune of needing to convert a few contacts into person accounts. I did find some very good resources online on how to do this through doing some data imports/updates, however this is a very cumbersome process for converting only a few contacts and I am lazy and want the business users to start taking care of this. 
 
 So I created a screen flow that can be used with an action on contact records that will convert them into person accounts. 
 
@@ -24,5 +24,5 @@ See: [https://help.salesforce.com/s/articleView?id=sf.account_person.htm&type=5]
 
 ### Here we go
 
-Go to *Setup*, *Flows* and click on the *New Flow* button. Select *Screen Flow* and *Create*. _If you need screenshots for this bit, go back to Trailhead and get across the basics first_
+Go to *Setup*, *Flows* and click on the *New Flow* button. Select *Screen Flow* and *Create*. _If you need screenshots for this bit, go back to [Trailhead](https://trailhead.salesforce.com/) and get across the basics first_
 
