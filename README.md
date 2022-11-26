@@ -1,4 +1,4 @@
-# Convert a Contact to Person Account
+# Salesforce: Convert a Contact to Person Account
 
 I recently had the misfortune of needing to convert a few contacts into person accounts. I did find some very good resources online on how to do this through doing some data imports/updates, however this is a very cumbersome process for converting only a few contacts and I am lazy and want the business users to start taking care of this. 
 
